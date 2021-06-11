@@ -60,9 +60,9 @@ typedef unsigned __int64 uint64_t;
  * the effective limit on the size of the header, define the macro
  * to a very large number (e.g. -DHTTP_MAX_HEADER_SIZE=0x7fffffff)
  */
-#ifndef HTTP_MAX_HEADER_SIZE
-# define HTTP_MAX_HEADER_SIZE (80*1024)
-#endif
+//#ifndef HTTP_MAX_HEADER_SIZE
+#define HTTP_MAX_HEADER_SIZE (120*1024)
+//#endif
 
 typedef struct http_parser http_parser;
 typedef struct http_parser_settings http_parser_settings;
